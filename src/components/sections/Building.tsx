@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 
 const spec: { label: string; value: string }[] = [
   { label: "Started as", value: "An exercise — a way to go deeper into backend engineering than tutorials allow." },
-  { label: "Became", value: "An attempt at a real company, not a portfolio project." },
-  { label: "What it is", value: "A distributed ride-hailing platform, built the way one would actually have to be." },
+  { label: "Became", value: "Something I'm no longer comfortable calling a side project." },
+  { label: "What it is", value: "A distributed ride-hailing platform, built the way one would actually have to survive production." },
   {
     label: "Architecture",
-    value:
-      "Independent services communicating over REST, gRPC, and asynchronous messaging. Each owns one responsibility.",
+    value: "Independent services. Real network calls between them. Real ways for those calls to fail.",
   },
   {
     label: "Stack",
     value: "Go · PostgreSQL · MongoDB · Redis · Kafka · Docker · OpenTelemetry · Prometheus · Grafana · Tempo",
   },
-  { label: "State", value: "Unfinished. It's meant to be — the architecture is still earning its shape." },
+  { label: "Open question", value: "Whether a couple of these services should really be one. I go back and forth." },
+  { label: "State", value: "Unfinished. Some of the diagrams are already wrong. I haven't fixed them yet." },
 ];
 
 export default function Building() {

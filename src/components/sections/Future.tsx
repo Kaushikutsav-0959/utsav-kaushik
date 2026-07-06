@@ -7,29 +7,37 @@ export default function Future() {
     <section
       id="future"
       aria-label="Future"
-      className="relative min-h-screen flex items-center px-6 sm:px-12 lg:px-24 py-32 bg-ink"
+      className="relative min-h-screen flex flex-col items-center justify-center text-center px-6 bg-ink"
     >
-      <motion.div
+      <motion.h2
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: true, amount: 0.6 }}
-        transition={{ duration: 1.6, ease: "easeOut" }}
-        className="max-w-2xl mx-auto w-full"
+        viewport={{ once: true, amount: 0.8 }}
+        transition={{ duration: 1 }}
+        className="font-mono text-xs tracking-[0.25em] text-grey uppercase mb-12"
       >
-        <h2 className="font-mono text-xs tracking-[0.25em] text-grey uppercase mb-10">
-          Future
-        </h2>
-        <p className="font-serif text-2xl sm:text-3xl text-paper leading-relaxed">
-          I want to work on systems that operate at a scale where the
-          engineering becomes the product — infrastructure that quietly
-          powers things millions of people do without thinking about how.
-        </p>
-        <p className="mt-8 text-paper-dim text-lg leading-relaxed">
-          Vectra is where I&apos;m learning to do that honestly, at a scale I
-          can still hold in my head. It should get harder before it gets
-          easier. That&apos;s the part I&apos;m here for.
-        </p>
-      </motion.div>
+        Future
+      </motion.h2>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.7 }}
+        transition={{ duration: 1.8, ease: "easeOut" }}
+        className="font-serif text-3xl sm:text-4xl lg:text-5xl text-paper leading-snug max-w-3xl"
+      >
+        I don&apos;t know exactly what I&apos;m building toward yet.
+      </motion.p>
+
+      <motion.p
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.7 }}
+        transition={{ duration: 1.8, delay: 1, ease: "easeOut" }}
+        className="mt-8 font-serif italic text-xl sm:text-2xl text-gold max-w-xl"
+      >
+        I know it has to disappear the way good infrastructure does.
+      </motion.p>
     </section>
   );
 }

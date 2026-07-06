@@ -3,10 +3,9 @@
 import { motion, type Variants } from "framer-motion";
 
 const paragraphs = [
-  "I don't think about software as code. I think about it as systems people depend on without noticing.",
-  "The best engineering disappears. It runs quietly underneath the things people actually care about — a ride arriving, a payment clearing — and it asks nothing of them in return.",
-  "I'm not interested in demonstrating what I know. I'm interested in building things that hold up long after the interesting part is done.",
-  "Curiosity compounds. So does discipline. Neither works without the other.",
+  "I don't think about software as code. I think about it as things people depend on without noticing.",
+  "The best engineering disappears — quietly, underneath a ride arriving, a payment clearing. It asks nothing back.",
+  "Curiosity compounds. So does discipline. Neither works alone.",
 ];
 
 const container: Variants = {

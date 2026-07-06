@@ -2,7 +2,13 @@
 
 import { motion } from "framer-motion";
 
-const prompts = ["why?", "how?", "what happens when it fails?", "how does it recover?", "what happens at 10x load?"];
+const prompts = [
+  "break it into parts",
+  "find the seams",
+  "assume the seams will leak",
+  "design for the leak, not the happy path",
+  "still not sure i got the boundaries right",
+];
 
 export default function Thinking() {
   return (
@@ -49,8 +55,8 @@ export default function Thinking() {
             failures live.
           </p>
           <p className="mt-6 text-paper-dim text-lg">
-            Every decision trades one problem for another. There are rarely
-            perfect solutions. Only informed compromises.
+            Every decision trades one problem for another. I&apos;ve stopped
+            looking for the version without trade-offs.
           </p>
         </motion.div>
       </div>

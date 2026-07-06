@@ -3,14 +3,38 @@
 import { motion } from "framer-motion";
 
 const principles = [
-  "Reliability is a feature, not an afterthought.",
-  "A system you can't observe in production is a system you don't actually understand.",
-  "Correctness before cleverness.",
-  "Understanding before optimization.",
-  "Every abstraction hides complexity somewhere else. The job is knowing where.",
-  "Simple systems age better than clever ones.",
-  "There are rarely perfect solutions. Only informed trade-offs.",
-  "Build products, not demos.",
+  {
+    line: "Reliability is a feature, not an afterthought.",
+    doubt: "I only really believe this because I once shipped something that wasn't.",
+  },
+  {
+    line: "A system you can't observe in production is a system you don't actually understand.",
+    doubt: "I still guess more than I'd like to admit.",
+  },
+  {
+    line: "Correctness before cleverness.",
+    doubt: "Cleverness is more fun. That's exactly the problem.",
+  },
+  {
+    line: "Understanding before optimization.",
+    doubt: "I've optimized the wrong thing before. More than once.",
+  },
+  {
+    line: "Every abstraction hides complexity somewhere else.",
+    doubt: "The job is knowing where. I don't always know where yet.",
+  },
+  {
+    line: "Simple systems age better than clever ones.",
+    doubt: "Mine aren't simple yet either.",
+  },
+  {
+    line: "There are rarely perfect solutions. Only trade-offs.",
+    doubt: "“Informed” is doing a lot of work in that sentence.",
+  },
+  {
+    line: "Build the thing, not the demo of the thing.",
+    doubt: "Vectra is the proof. It's still in progress.",
+  },
 ];
 
 export default function Principles() {
@@ -26,15 +50,24 @@ export default function Principles() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.8 }}
           transition={{ duration: 0.8 }}
-          className="font-mono text-xs tracking-[0.25em] text-grey uppercase mb-16"
+          className="font-mono text-xs tracking-[0.25em] text-grey uppercase mb-4"
         >
           Principles
         </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="font-serif italic text-paper-dim text-lg mb-16"
+        >
+          Held loosely. Still being tested.
+        </motion.p>
 
         <ol className="space-y-0">
-          {principles.map((principle, i) => (
+          {principles.map((p, i) => (
             <motion.li
-              key={principle}
+              key={p.line}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, amount: 0.6 }}
@@ -46,16 +79,9 @@ export default function Principles() {
               </span>
               <div className="flex-1">
                 <p className="font-serif text-xl sm:text-2xl text-paper leading-snug">
-                  {principle}
+                  {p.line}
                 </p>
-                <motion.span
-                  initial={{ scaleX: 0 }}
-                  whileInView={{ scaleX: 1 }}
-                  viewport={{ once: true, amount: 0.6 }}
-                  transition={{ duration: 0.7, delay: (i % 4) * 0.08 + 0.25 }}
-                  style={{ transformOrigin: "left" }}
-                  className="block h-px w-16 bg-gold-dim mt-4"
-                />
+                <p className="font-mono text-sm text-grey mt-3">— {p.doubt}</p>
               </div>
             </motion.li>
           ))}
