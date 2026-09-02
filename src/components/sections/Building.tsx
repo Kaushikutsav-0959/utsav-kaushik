@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 const spec: { label: string; value: string }[] = [
-  { label: "Started as", value: "An exercise — a way to go deeper into backend engineering than tutorials allow." },
+  { label: "Started as", value: "An exercise : A way to go deeper into backend engineering than tutorials allow." },
   { label: "Became", value: "Something I'm no longer comfortable calling a side project." },
   { label: "What it is", value: "A distributed ride-hailing platform, built the way one would actually have to survive production." },
   {

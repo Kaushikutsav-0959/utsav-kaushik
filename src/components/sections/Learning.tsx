@@ -17,7 +17,7 @@ const threads = [
   },
   {
     topic: "Kubernetes",
-    note: "learning it the slow way — by outgrowing what came before it.",
+    note: "learning it the slow way, by outgrowing what came before it.",
   },
   {
     topic: "Observability",
@@ -74,7 +74,7 @@ export default function Learning() {
               />
               <p className="font-mono text-sm sm:text-base leading-relaxed">
                 <span className="text-paper">{t.topic}</span>
-                <span className="text-grey"> — {t.note}</span>
+                <span className="text-grey"> - {t.note}</span>
               </p>
             </motion.li>
           ))}

@@ -6,7 +6,7 @@ const lines = [
   "What happens when this fails?",
   "What happens under load nobody planned for?",
   "What happens when the thing it depends on is already down?",
-  "How does it recover, and who finds out first — the user, or the on-call engineer?",
+  "How does it recover, and who finds out first : the user, or the on-call engineer?",
 ];
 
 const closing =

@@ -4,7 +4,7 @@ import { motion, type Variants } from "framer-motion";
 
 const paragraphs = [
   "I don't think about software as code. I think about it as things people depend on without noticing.",
-  "The best engineering disappears — quietly, underneath a ride arriving, a payment clearing. It asks nothing back.",
+  "The best engineering disappears quietly, underneath a ride arriving, a payment clearing. It asks nothing back.",
   "Curiosity compounds. So does discipline. Neither works alone.",
 ];
 

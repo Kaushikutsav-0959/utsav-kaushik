@@ -50,7 +50,7 @@ export default function Thinking() {
         >
           <p>
             I think in systems, not components. I break large problems into
-            smaller, independent parts — then spend most of my time on the
+            smaller, independent parts and then spend most of my time on the
             communication between them, because that&apos;s where the real
             failures live.
           </p>

@@ -81,7 +81,7 @@ export default function Principles() {
                 <p className="font-serif text-xl sm:text-2xl text-paper leading-snug">
                   {p.line}
                 </p>
-                <p className="font-mono text-sm text-grey mt-3">— {p.doubt}</p>
+                <p className="font-mono text-sm text-grey mt-3">- {p.doubt}</p>
               </div>
             </motion.li>
           ))}

@@ -37,7 +37,7 @@ export default function ChapterMarker() {
       <span className="text-gold">{active.index}</span>
       <span className="opacity-40">/</span>
       <span>{chapters.length - 1}</span>
-      <span className="opacity-40 ml-1">—</span>
+      <span className="opacity-40 ml-1">-</span>
       <span className="uppercase">{active.label}</span>
     </div>
   );
